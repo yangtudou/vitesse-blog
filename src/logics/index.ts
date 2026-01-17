@@ -2,6 +2,7 @@ import dayjs from 'dayjs'
 
 export const isDark = useDark()
 export const englishOnly = useLocalStorage('antfu-english-only', false)
+// export const zhlishOnly = useLocalStorage('antfu-zhlish-only', false)
 export const galleryView = useLocalStorage<'cover' | 'contain'>('antfu-gallery-view', 'cover')
 
 /**
