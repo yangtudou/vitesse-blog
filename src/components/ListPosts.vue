@@ -92,10 +92,10 @@ function getGroupName(p: Post) {
                 class="text-xs bg-zinc:15 text-zinc5 rounded px-1 py-0.5 ml--12 mr2 my-auto hidden md:block"
               >中文</span>
               <span
-                v-if="route.lang === 'ja'"
+                v-if="route.lang === 'en'"
                 align-middle flex-none
                 class="text-xs bg-zinc:15 text-zinc5 rounded px-1 py-0.5 ml--15 mr2 my-auto hidden md:block"
-              >日本語</span>
+              >English</span>
               <span align-middle>{{ route.title }}</span>
               <span
                 v-if="route.redirect"
@@ -137,10 +137,11 @@ function getGroupName(p: Post) {
                 class="text-xs bg-zinc:15 text-zinc5 rounded px-1 py-0.5 my-auto md:hidden"
               >中文</span>
               <span
-                v-if="route.lang === 'ja'"
+                v-if="route.lang === 'en'"
                 align-middle flex-none
                 class="text-xs bg-zinc:15 text-zinc5 rounded px-1 py-0.5 my-auto md:hidden"
-              >日本語</span>
+              >English/span>
+              </span>
             </div>
           </li>
           <div v-if="route.place" op50 text-sm hidden mt--2 md:block>

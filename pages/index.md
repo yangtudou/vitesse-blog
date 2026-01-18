@@ -1,7 +1,7 @@
 ---
 title: y3say
 description: 关于 y3say 作者的故事。
-art: random
+art: dots
 ---
 
 你好！我叫洋san芋ya，一个 **3D 建模师**，就职于香薰蜡烛行业。

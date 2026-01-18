@@ -148,11 +148,11 @@ const ArtComponent = computed(() => {
       <a :href="tweetUrl" target="_blank" op50>twitter</a>
     </template>
     <br>
-    <span font-mono op50>> </span>
+    <!-- <span font-mono op50>> </span> -->
     <RouterLink
       :to="route.path.split('/').slice(0, -1).join('/') || '/'"
       class="font-mono op50 hover:op75"
-      v-text="'cd ..'"
+      v-text="'返回上级'"
     />
   </div>
 </template>
