@@ -1,9 +1,7 @@
-=======
+---
 title: y3say
 description: 关于 y3say 作者的故事。
-=======
 art: dots
-
 ---
 
 <SubNav />
