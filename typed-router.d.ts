@@ -37,6 +37,13 @@ declare module 'vue-router/auto-routes' {
       { 404: ParamValue<false> },
       | never
     >,
+    '/about': RouteRecordInfo<
+      '/about',
+      '/about',
+      Record<never, never>,
+      Record<never, never>,
+      | never
+    >,
     '/notes': RouteRecordInfo<
       '/notes',
       '/notes',
@@ -54,6 +61,20 @@ declare module 'vue-router/auto-routes' {
     '/posts/': RouteRecordInfo<
       '/posts/',
       '/posts',
+      Record<never, never>,
+      Record<never, never>,
+      | never
+    >,
+    '/posts/clean-github-action-zh': RouteRecordInfo<
+      '/posts/clean-github-action-zh',
+      '/posts/clean-github-action-zh',
+      Record<never, never>,
+      Record<never, never>,
+      | never
+    >,
+    '/posts/hello-surge-again-zh': RouteRecordInfo<
+      '/posts/hello-surge-again-zh',
+      '/posts/hello-surge-again-zh',
       Record<never, never>,
       Record<never, never>,
       | never
@@ -90,6 +111,12 @@ declare module 'vue-router/auto-routes' {
       views:
         | never
     }
+    'pages/about.md': {
+      routes:
+        | '/about'
+      views:
+        | never
+    }
     'pages/notes.md': {
       routes:
         | '/notes'
@@ -105,6 +132,18 @@ declare module 'vue-router/auto-routes' {
     'pages/posts/index.md': {
       routes:
         | '/posts/'
+      views:
+        | never
+    }
+    'pages/posts/clean-github-action-zh.md': {
+      routes:
+        | '/posts/clean-github-action-zh'
+      views:
+        | never
+    }
+    'pages/posts/hello-surge-again-zh.md': {
+      routes:
+        | '/posts/hello-surge-again-zh'
       views:
         | never
     }

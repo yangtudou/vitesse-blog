@@ -40,7 +40,7 @@ function isSameGroup(a: Post, b?: Post) {
 
 function getGroupName(p: Post) {
   if (isFuture(p.date))
-    return 'Upcoming'
+    return '即将推出...'
   return getYear(p.date)
 }
 </script>
@@ -49,7 +49,7 @@ function getGroupName(p: Post) {
   <ul>
     <template v-if="!posts.length">
       <div py2 op50>
-        { nothing here yet }
+        { 这里还什么都没有 }
       </div>
     </template>
 
@@ -62,7 +62,8 @@ function getGroupName(p: Post) {
           '--enter-step': '60ms',
         }"
       >
-        <span text-8em color-transparent absolute left--3rem top--2rem font-bold text-stroke-2 text-stroke-hex-aaa op10>{{ getGroupName(route) }}</span>
+        <!-- 底部年份 -->
+        <span text-8em color-transparent absolute left--3rem top--2rem font-bold text-stroke-2 text-stroke-hex-aaa op7>{{ getGroupName(route) }}</span>
       </div>
       <div
         class="slide-enter"
@@ -86,11 +87,11 @@ function getGroupName(p: Post) {
         >
           <li class="no-underline" flex="~ col md:row gap-2 md:items-center">
             <div class="title text-lg leading-1.2em" flex="~ gap-2 wrap">
-              <span
+              <!-- <span
                 v-if="route.lang === 'zh'"
                 align-middle flex-none
                 class="text-xs bg-zinc:15 text-zinc5 rounded px-1 py-0.5 ml--12 mr2 my-auto hidden md:block"
-              >中文</span>
+              >中文</span> -->
               <span
                 v-if="route.lang === 'en'"
                 align-middle flex-none
@@ -125,17 +126,19 @@ function getGroupName(p: Post) {
                 title="Provided in radio"
               />
 
+              <!-- 日期 -->
               <span text-sm op50 ws-nowrap>
                 {{ formatDate(route.date, true) }}
               </span>
+
               <span v-if="route.duration" text-sm op40 ws-nowrap>· {{ route.duration }}</span>
               <span v-if="route.platform" text-sm op40 ws-nowrap>· {{ route.platform }}</span>
               <span v-if="route.place" text-sm op40 ws-nowrap md:hidden>· {{ route.place }}</span>
-              <span
+              <!-- <span
                 v-if="route.lang === 'zh'"
                 align-middle flex-none
                 class="text-xs bg-zinc:15 text-zinc5 rounded px-1 py-0.5 my-auto md:hidden"
-              >中文</span>
+              >中文</span> -->
               <span
                 v-if="route.lang === 'en'"
                 align-middle flex-none

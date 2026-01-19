@@ -19,7 +19,7 @@ const { y: scroll } = useWindowScroll()
       <Logo />
     </RouterLink>
     <button
-      title="Scroll to top"
+      title="回到顶部"
       fixed right-3 bottom-3 w-10 h-10 hover:op100 rounded-full
       hover-bg-hex-8883 transition duration-300 z-100 print:hidden
       :class="scroll > 300 ? 'op30' : 'op0! pointer-events-none'"
@@ -30,13 +30,20 @@ const { y: scroll } = useWindowScroll()
     <nav class="nav">
       <div class="spacer" />
       <div class="right" print:op0>
-        <RouterLink to="/posts" title="鱼的记忆">
+        <!-- <RouterLink to="/posts" title="鱼的记忆">
           <span class="lt-md:hidden">鱼的记忆</span>
           <div i-ri-article-line md:hidden />
+        </RouterLink> -->
+        <RouterLink to="/about" title="关于">
+          <span class="lt-md:hidden">关于</span>
+          <div i-ri:information-2-line md:hidden />
         </RouterLink>
+        <!--
         <RouterLink to="/photos" title="相片">
-          <div i-ri-camera-3-line />
+          <span class="lt-md:hidden">相片</span>
+          <div i-ri-camera-3-line md:hidden />
         </RouterLink>
+        -->
         <a href="https://github.com/antfu" target="_blank" title="GitHub" class="lt-md:hidden">
           <div i-uil-github-alt />
         </a>
