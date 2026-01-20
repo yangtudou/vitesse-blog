@@ -49,7 +49,7 @@ recording:
 
 ### MarkDown 语法
 
-常用的不说了，就列一些不常用的。
+常用的不说了，就列一些<MarkerPattern>不常用</MarkerPattern>的吧。
 
 #### icon
 
@@ -58,3 +58,23 @@ recording:
 参考用法: `<div i-ic:baseline-code />`
 
 效果: <div i-ic:baseline-code />
+
+#### 标签用法
+
+参考用法：
+
+```html
+<!-- Marker -->
+<Marker>Marker</Marker>
+
+<!-- MarkerCore -->
+<MarkerCore>MarkerCore</MarkerCore>
+
+<!-- MarkerPattern -->
+<MarkerPattern>MarkerPattern</MarkerPattern>
+
+<!-- MarkerTips -->
+<MarkerTips>MarkerPattern</MarkerTips>
+```
+
+效果：<Marker>Marker</Marker> <MarkerCore>MarkerCore</MarkerCore> <MarkerPattern>MarkerPattern</MarkerPattern> <MarkerTips>MarkerPattern</MarkerTips>
