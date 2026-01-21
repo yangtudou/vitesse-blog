@@ -65,6 +65,13 @@ declare module 'vue-router/auto-routes' {
       Record<never, never>,
       | never
     >,
+    '/posts/blender-弯曲修改器做器皿_详解': RouteRecordInfo<
+      '/posts/blender-弯曲修改器做器皿_详解',
+      '/posts/blender-%E5%BC%AF%E6%9B%B2%E4%BF%AE%E6%94%B9%E5%99%A8%E5%81%9A%E5%99%A8%E7%9A%BF_%E8%AF%A6%E8%A7%A3',
+      Record<never, never>,
+      Record<never, never>,
+      | never
+    >,
     '/posts/clean-github-action-zh': RouteRecordInfo<
       '/posts/clean-github-action-zh',
       '/posts/clean-github-action-zh',
@@ -132,6 +139,12 @@ declare module 'vue-router/auto-routes' {
     'pages/posts/index.md': {
       routes:
         | '/posts/'
+      views:
+        | never
+    }
+    'pages/posts/blender-弯曲修改器做器皿_详解.md': {
+      routes:
+        | '/posts/blender-弯曲修改器做器皿_详解'
       views:
         | never
     }
